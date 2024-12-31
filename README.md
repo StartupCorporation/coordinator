@@ -49,7 +49,7 @@ If you want to clone project to other directory, just replace `~/deye_web` with 
 
 **The further steps assume that you cloned the `coordinator` to the `deye_web` directory.**
 
-### Setup project
+### Initialize the project
 
 Run the following commands:
 
@@ -78,3 +78,11 @@ deye_web
 `-- infrastructure
     `-- customer-app
 ```
+
+## Project Entrypoint
+
+All project management stuff is placed in the `infrastructure` directory.
+
+Change your directory to the `infrastructure` and check the `README.md` file for additional details. 
+
+The `infrastructure` contains scripts to start, stop, etc. the `deye-web` project or separate services.
