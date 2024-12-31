@@ -1,20 +1,8 @@
 # Deye Web
-
 This repository is a coordinator of the *Deye Web* project.
 
 Here, we define the project structure, how repositories have to be cloned, what prerequisites you must have, workflow
 examples, etc.
-
-## Content
-
-* [Directories](#directories)
-    * [Frontend](#frontend)
-    * [Backend](#backend)
-    * [Infrastructure](#infrastructure)
-* [Makefile](#makefile)
-* [Setup](#setup)
-    * [Coordinator](#coordinator)
-    * [Setup project](#setup-project)
 
 ## Directories
 
@@ -37,12 +25,10 @@ The `backend` directory contains backend application repositories, such as:
 The `infrastructure` repository contains the necessary parts to set up the application locally, deploy it to production,
 configure application for development, etc.
 
-## Makefile
+## .env.local
 
-The `Makefile` file defines scripts that can be used for local development. For example:
+The `.env.local` file defines scripts that can be used for local development. For example:
 * Initialize the project
-* Start the application locally
-* Stops the application
 * etc.
 
 ## Setup
@@ -68,7 +54,8 @@ If you want to clone project to other directory, just replace `~/deye_web` with 
 Run the following commands:
 
 ```shell
-$ make init
+$ source .env.local
+$ deye-init
 ```
 
 It will clone the rest of repositories, link them and make some configuration that are necessary for the local development.
@@ -81,11 +68,13 @@ deye_web
 |   |   `-- app
 |   |
 |   `-- customer
-|       `-- app    
+|       |-- app
+|       `-- infrastructure  # It is a link to the infrastructure/customer-app    
 |
 |-- frontend
 |   `-- customer
 |       `-- app    
 |
 `-- infrastructure
+    `-- customer-app
 ```
