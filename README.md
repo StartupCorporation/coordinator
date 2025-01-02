@@ -65,7 +65,8 @@ After running this command, you will have the following project structure:
 deye_web
 |-- backend
 |   |-- admin
-|   |   `-- app
+|   |   |-- app
+|   |   `-- infrastructure  # It is a link to the infrastructure/admin-app
 |   |
 |   `-- customer
 |       |-- app
@@ -76,7 +77,8 @@ deye_web
 |       `-- app    
 |
 `-- infrastructure
-    `-- customer-app
+    |-- customer-app
+    `-- admin-app
 ```
 
 ## Project Entrypoint
