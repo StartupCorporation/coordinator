@@ -73,7 +73,9 @@ deye_web
 |       `-- infrastructure  # It is a link to the infrastructure/customer-app    
 |
 |-- frontend
-|   `-- customer
+|   |-- customer
+|   |   `-- app    
+|   `-- admin
 |       `-- app    
 |
 `-- infrastructure
