@@ -18,7 +18,7 @@ The `frontend` directory contains frontend application repositories, such as:
 The `backend` directory contains backend application repositories, such as:
 
 * Admin microservice
-* Customer microservice
+* Comment microservice
 
 ### Infrastructure
 
@@ -68,9 +68,9 @@ deye_web
 |   |   |-- app
 |   |   `-- infrastructure  # It is a link to the infrastructure/admin-app
 |   |
-|   `-- customer
+|   `-- comment
 |       |-- app
-|       `-- infrastructure  # It is a link to the infrastructure/customer-app    
+|       `-- infrastructure  # It is a link to the infrastructure/comment-app    
 |
 |-- frontend
 |   |-- customer
@@ -79,7 +79,9 @@ deye_web
 |       `-- app    
 |
 `-- infrastructure
-    |-- customer-app
+    |-- fe-customer-app
+    |-- fe-admin-app
+    |-- comment-app
     `-- admin-app
 ```
 
